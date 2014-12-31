@@ -8,6 +8,7 @@ Graphics (PNG) image format."
 HOMEPAGE="http://libpng.sourceforge.net/"
 SRC_URI="mirror://sourceforge/libpng/libpng-${VERSION}.tar.xz"
 SRC_DIR="libpng-${VERSION}"
+PATCH_URI="http://pkgs.fedoraproject.org/cgit/libpng12.git/plain/libpng12-CVE-2013-6954.patch"
 
 ARCH=i686 # for backwards compatibility only
 
