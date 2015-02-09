@@ -1,0 +1,14 @@
+Older releases of this version were created with scripts/makefile.cygwin,
+which resulted in cygpng12.dll instead of cygpng12-0.dll.
+
+--- origsrc/libpng-1.2.52/Makefile.am	2014-11-20 09:14:11.000000000 -0600
++++ src/libpng-1.2.52/Makefile.am	2015-02-09 04:36:54.094128400 -0600
+@@ -42,7 +42,7 @@ libpng12_la_CPPFLAGS = @LIBPNG_DEFINES@
+ 
+ # MAJOR UPGRADE: the version-number settings below must be changed.
+ libpng12_la_LDFLAGS = -no-undefined -export-dynamic \
+-	-version-number 0:@PNGLIB_RELEASE@:0
++	-avoid-version
+ # -rpath is needed as automake doesn't know the directory
+ libpng_la_LDFLAGS = -rpath '$(libdir)' -no-undefined -export-dynamic \
+ 	-version-number 3:@PNGLIB_RELEASE@:0
