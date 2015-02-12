@@ -11,8 +11,6 @@ SRC_DIR="libpng-${VERSION}"
 PATCH_URI="http://pkgs.fedoraproject.org/cgit/libpng12.git/plain/libpng12-CVE-2013-6954.patch"
 PATCH_URI+=" 1.2.52-dll-compat.patch"
 
-ARCH=i686 # for backwards compatibility only
-
 PKG_NAMES="libpng12 libpng12-devel"
 libpng12_CONTENTS="usr/bin/cygpng12.dll usr/share/doc/"
 libpng12_devel_CONTENTS="usr/bin/libpng12-config usr/include/libpng12/ usr/lib/libpng12.* usr/lib/pkgconfig/libpng12.pc"
