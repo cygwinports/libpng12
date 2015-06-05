@@ -1,6 +1,6 @@
 NAME="libpng12"
 VERSION=1.2.53
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="PNG library"
 DESCRIPTION="libpng is the official reference library for the Portable Network
@@ -8,8 +8,12 @@ Graphics (PNG) image format."
 HOMEPAGE="http://libpng.sourceforge.net/"
 SRC_URI="mirror://sourceforge/libpng/libpng-${VERSION}.tar.xz"
 SRC_DIR="libpng-${VERSION}"
-PATCH_URI="http://pkgs.fedoraproject.org/cgit/libpng12.git/plain/libpng12-CVE-2013-6954.patch"
-PATCH_URI+=" 1.2.52-dll-compat.patch"
+PATCH_URI="
+	http://pkgs.fedoraproject.org/cgit/libpng12.git/plain/libpng12-CVE-2013-6954.patch
+	1.2.52-dll-compat.patch
+	1.2.53-cygwin-configure.patch
+"
+
 
 PKG_NAMES="libpng12 libpng12-devel"
 libpng12_CONTENTS="usr/bin/cygpng12.dll usr/share/doc/"
