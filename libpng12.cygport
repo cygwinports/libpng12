@@ -1,5 +1,5 @@
 NAME="libpng12"
-VERSION=1.2.56
+VERSION=1.2.57
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="PNG library"
@@ -13,7 +13,6 @@ PATCH_URI="
 	1.2.52-dll-compat.patch
 	1.2.53-cygwin-configure.patch
 "
-
 
 PKG_NAMES="libpng12 libpng12-devel"
 libpng12_CONTENTS="usr/bin/cygpng12.dll usr/share/doc/"
